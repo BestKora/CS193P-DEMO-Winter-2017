@@ -103,7 +103,7 @@ class FaceView: UIView
         path.addCurve(to: end, controlPoint1: cp1, controlPoint2: cp2)
         path.lineWidth = lineWidth
         return path
-    }
+        }
     
     private func pathForSkull() -> UIBezierPath {
         let path = UIBezierPath(arcCenter: skullCenter, radius: skullRadius, startAngle: 0, endAngle: 2 * CGFloat.pi, clockwise: false)

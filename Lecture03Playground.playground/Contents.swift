@@ -141,6 +141,7 @@ print(arrA.reduce(0) { $0 + $1 })
 
 // NSObject & NSNumber & Date & Data
 let num = NSNumber(value: 3.14)
+let n: NSNumber = 12.5
 let numDoubleValue = num.doubleValue
 let numBoolValue = num.boolValue
 let numIntValue = num.intValue
