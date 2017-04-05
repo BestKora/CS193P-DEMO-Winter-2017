@@ -15,7 +15,8 @@ class EmotionsViewController: VCLLoggingViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         var destinationViewController = segue.destination
         if let navigationController = destinationViewController as? UINavigationController {
-            destinationViewController = navigationController.visibleViewController ?? destinationViewController
+            destinationViewController =
+                navigationController.visibleViewController ?? destinationViewController
         }
         if let faceViewController = destinationViewController as? FaceViewController,
             let identifier = segue.identifier,

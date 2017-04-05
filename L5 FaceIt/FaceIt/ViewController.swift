@@ -63,6 +63,10 @@ class ViewController: UIViewController
         faceView?.mouthCurvature = mouthCurvatures[expression.mouth] ?? 0.0
     }
     
-    private let mouthCurvatures = [FacialExpression.Mouth.grin:0.5,.frown:-1.0,.smile:1.0,.neutral:0.0,.smirk:-0.5]
+    private let mouthCurvatures = [FacialExpression.Mouth.grin:0.5,
+                                   .frown:-1.0,
+                                   .smile:1.0,
+                                   .neutral:0.0,
+                                   .smirk:-0.5]
 }
 
