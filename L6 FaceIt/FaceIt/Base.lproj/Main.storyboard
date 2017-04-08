@@ -30,10 +30,10 @@
                                         <real key="value" value="0.5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="scale">
                                         <real key="value" value="0.90000000000000002"/>
@@ -56,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="60" y="602.24887556221893"/>
+            <point key="canvasLocation" x="-178" y="602"/>
         </scene>
         <!--Emotions-->
         <scene sceneID="frq-c8-9jK">
@@ -110,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rPG-NH-FrD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="60" y="-199.25037481259372"/>
+            <point key="canvasLocation" x="-177" y="-200"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="aEv-h1-Yu1">
@@ -123,7 +123,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="csQ-RI-oLr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1822" y="77"/>
+            <point key="canvasLocation" x="-1571" y="59"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KO7-Qx-gw4">
