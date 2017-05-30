@@ -13,6 +13,7 @@ class ImageViewController: UIViewController
     // MARK: Model
 
     var imageURL: URL? {
+        
         didSet {
             image = nil
             if view.window != nil { // if we're on screen
@@ -66,7 +67,7 @@ class ImageViewController: UIViewController
     
     fileprivate var imageView = UIImageView()
     
-    private var image: UIImage? {
+    private var image: UIImage? { 
         get {
             return imageView.image
         }

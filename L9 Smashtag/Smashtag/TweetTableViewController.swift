@@ -30,6 +30,7 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate
     // when this is set
     // we'll reset our tweets Array
     // to reflect the result of fetching Tweets that match
+    
     var searchText: String? {
         didSet {
             searchTextField?.text = searchText
@@ -48,7 +49,8 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate
     // that finds tweets that match our searchText
     private func twitterRequest() -> Twitter.Request? {
         if let query = searchText, !query.isEmpty {
-            return Twitter.Request(search: query, count: 100)
+            return Twitter.Request(search: "\(query) -filter:safe -filter:retweets",
+                                    count: 100)
         }
         return nil
     }
@@ -64,6 +66,7 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate
     // we update our tweets array
     // and then let the table view know that we added a section
     // (it will then call our UITableViewDataSource to get what it needs)
+    
     private func searchForTweets() {
         // "lastTwitterRequest?.newer ??" was added after lecture for REFRESHING
         if let request = lastTwitterRequest?.newer ?? twitterRequest() {
@@ -152,9 +155,10 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate
     }
     
     // Added after lecture for REFRESHING
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        // make it a little clearer when each pull from Twitter
-        // occurs in the table by setting section header titles
+    override func tableView(_ tableView: UITableView,
+                            titleForHeaderInSection section: Int) -> String? {
+        // делает более понятным, что происходит при каждом "вытягивании"
+        // твитов из Twitter, если появляются Заголовки Секций
         return "\(tweets.count-section)"
     }
 }
